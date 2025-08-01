@@ -13,3 +13,56 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+.hero {
+  background-image: url("https://images.unsplash.com/photo-1677283786604-fe399c2f609a?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+  z-index: -2;
+}
+
+.hero::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: -1;
+}
+
+.hero h1{
+    font-size: 46px;
+    margin: -20px 0 20px;
+    color: skyblue;
+
+}
+
+.hero p{
+    font-size: 25px;
+    letter-spacing: 1px;
+    color: plum;
+}
+
+.content h2, .content h3{
+    font-size: 150%;
+    margin: 20px 0;
+}
+
+.content p{
+    color: #555;
+    line-height: 30px;
+    letter-spacing: 1.2px;
+}
+
+
